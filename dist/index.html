@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <meta http-equiv="X-UA-compatible" content="IE-edge">
+
+        <title>Wizard Wars</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&family=MedievalSharp&family=Rubik+Wet+Paint&family=Great+Vibes&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="output.css">
+    </head>
+
+    <body class="h-screen bg-slate-950 p-6">
+        <header class="w-full mb-2 text-center">
+            <h1 class="font-odibeeSans text-slate-200 text-7xl">
+                Wizard Wars
+            </h1>
+        </header>
+
+        <main class="flex flex-col items-center gap-4 pb-8">
+            <div id="cards-cntr" class="flex flex-col items-center gap-4 sm:flex-row sm:justify-center sm:gap-10 p-4 min-h-32 font-medievalSharp text-center text-white">
+                
+                <section id="hero" class="flex flex-col w-64 pt-2 bg-gray-900 rounded-xl border-4 border-card-border shadow-md shadow-cyan-200/50">
+                </section>
+
+                <section id="monster" class="flex flex-col w-64 pt-2 bg-gray-900 rounded-xl overflow-hidden border-4 border-card-border shadow-md shadow-cyan-200/50" >
+
+                </section>
+                
+            </div>
+            
+            <button id="attack-btn" class="bg-card-border hover:shadow-lg
+                  hover:shadow-blue-900 px-8 py-2 font-medievalSharp text-2xl
+                  text-yellow-200 hover:text-white border-2 border-white hover:border-yellow-200 rounded-md" type="button">
+                Attack
+            </button>
+        </main>
+
+        <aside id="game-over" class="hidden fixed top-0 left-0 w-screen h-screen bg-gray-900 p-6 text-gray-200 text-center"> </aside>
+        
+        <script src="index.js" type="module"></script>
+    </body>
+</html>
